@@ -13,6 +13,7 @@
   <body>
     <header class="header">
       <div class="container flex-box">
+
         <nav class="navigation flex-box">
           <a href="./index.html" class="logo-link link">Web<span class="logo-span">Studio</span></a>
           <ul class="nav-list list flex-box">
@@ -21,6 +22,7 @@
             <li class="nav-item"><a href="#" class="nav-link link position-container">Контакты</a></li>
           </ul>
         </nav>
+
         <address class="address">
           <a href="mailto:info@devstudio.com" class="address-link mail link">
             <svg class="icon address-icon" width="21px" height="16px">
@@ -35,15 +37,19 @@
             <span class="adress-span">+38 096 111 11 11</span>
           </a>
         </address>
+
       </div>
     </header>
+
     <main class="main">
+
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
           <button type="button" class="button hero-button" data-modal-open>Заказать услугу</button>
         </div> 
       </section>
+
       <!-- Код для модального окна -->
       <div class="modal-backdrop is-hidden" data-modal>
         <div class="modal">
@@ -59,22 +65,40 @@
           <form class="form">
             <div class="form-item">
               <label for="name" class="form-label">Имя</label>
+              <svg class="form-icon" width="18px" height="18px">
+                <use href="./images/symbol-defs.svg#icon-person-modal"></use>
+              </svg>
               <input type="text" class="form-imput" name="name" id="name">
             </div>
           
             <div class="form-item">
               <label for="phone" class="form-label">Телефон</label>
+              <svg class="form-icon" width="18px" height="18px">
+                <use href="./images/symbol-defs.svg#icon-phone-modal"></use>
+              </svg>
               <input type="tel" class="form-imput" name="tel" id="phone">
             </div>
           
             <div class="form-item">
               <label for="mail" class="form-label">Почта</label>
+              <svg class="form-icon" width="18px" height="18px">
+                <use href="./images/symbol-defs.svg#icon-email-modal"></use>
+              </svg>
               <input type="email" class="form-imput" name="mail" id="mail">
             </div>
 
             <div class="form-item text-area-item">
               <label for="comment" class="form-label">Комментарий</label>
-              <textarea name="comment" id="comment" placeholder="Введите текст" class="form-text-area"></textarea>
+              <textarea name="comment" id="comment" placeholder="Введите текст" class="form-imput form-text-area"></textarea>
+            </div>
+
+            <div class="form-item checkbox-item flex-box">
+              <label class="form-label checkbox-label">
+                <input type="checkbox" name="rules" value="ok" class="checkbox">
+                <span class="check-icon"></span>
+                Соглашаюсь с рассылкой и принимаю
+              </label>
+              <a href="#" class="link rules-link"> Условия договора</a>
             </div>
 
             <div class="submit flex-box">
@@ -141,6 +165,7 @@
         </ul>
         </div>
       </section>
+
       <section class="section we-do">
         <div class="container">
           <h4 class="title">Чем мы занимаемся</h4>
@@ -183,6 +208,7 @@
         </ul>
         </div>
       </section>
+
       <section class="section team">
         <div class="container">
           <h5 class="title">Наша команда</h5>
@@ -411,10 +437,13 @@
           </ul>
         </div>
       </section>
+
     </main>
+
     <footer class="footer">
       <div class="container flex-box">
         <div class="address-container">
+
           <a href="./index.html" class="logo-link link">Web<span class="logo-span">Studio</span></a>
           <address class="address">
             <ul class="address-links list">
@@ -427,8 +456,10 @@
               <li class="address-list-item"><a href="tel:+380991111111" class="address-link phone link">+38 099 111 11 11</a></li>
             </ul>
           </address>
+
         </div>
         <div class="social-container">
+
           <h7 class="title social-title">Присоединяйтесь</h7>
           <ul class="list icon-list flex-box">
             <li class="list-item social-item">
@@ -460,6 +491,7 @@
               </a>
             </li>
           </ul>
+
         </div>
       </div>
     </footer>

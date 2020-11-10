@@ -283,8 +283,19 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 
+  color: rgba(0, 0, 0, 1);
+
   align-items: center;
   justify-content: center;
+}
+
+.modal .close-button:hover,
+.modal .close-button:focus {
+  color: var(--accent-color);
+}
+
+.modal .close-icon {
+  fill: currentColor;
 }
 
 .modal .modal-title {
@@ -309,7 +320,7 @@ body {
   margin-bottom: 10px;
 }
 
-.modal .tezt-area-item {
+.modal .text-area-item {
   margin-bottom: 20px;
 }
 
@@ -344,6 +355,32 @@ body {
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+
+  transition-property: border;
+  transition-duration: var(--main-duration);
+  transition-timing-function: var(--main-timing-function);
+}
+
+.modal .form-imput:focus {
+  border: 1px solid var(--accent-color);
+  outline: none;
+}
+
+.modal .form-item:focus-within .form-icon {
+  fill: var(--accent-color);
+}
+
+.modal .form-icon {
+  position: absolute;
+
+  bottom: 12px;
+  left: 56px;
+
+  fill: rgba(33, 33, 33, 1);
+
+  transition-property: fill;
+  transition-duration: var(--main-duration);
+  transition-timing-function: var(--main-timing-function);
 }
 
 .modal .form-text-area {
@@ -365,6 +402,94 @@ body {
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+}
+
+.modal .checkbox-item {
+  margin-bottom: 30px;
+
+  min-height: 24px;
+
+  justify-content: center;
+}
+
+.modal .checkbox-label {
+  display: flex;
+
+  font-family: var(--main-font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+
+  align-items: center;
+}
+
+.modal .checkbox {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.modal .check-icon {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border: 2px solid rgba(33, 33, 33, 1);
+  border-radius: 2px;
+  margin-right: 7px;
+
+  transition-property: background-color, border;
+  transition-duration: var(--main-duration);
+  transition-timing-function: var(--main-timing-function);
+}
+
+.modal .checkbox:checked + .check-icon {
+  border: transparent;
+  background-color: var(--accent-color);
+  background-image: url(../images/check.svg);
+  background-size: contain;
+  background-origin: border-box;
+}
+
+.modal .rules-link {
+  margin-left: 5px;
+  font-family: var(--main-font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+.modal .submit {
+  justify-content: center;
+}
+
+.modal .submit-button {
+  width: 200px;
+  height: 50px;
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  font-family: var(--main-font-family);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: #ffffff;
+
+  transition-property: background-color;
+  transition-duration: var(--main-duration);
+  transition-timing-function: var(--main-timing-function);
+}
+
+.modal .submit-button:hover,
+.modal .submit-button:focus {
+  background-color: rgba(24, 140, 232, 1);
 }
 
 /* Первая секция */
