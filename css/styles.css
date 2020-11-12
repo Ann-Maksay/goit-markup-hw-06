@@ -404,6 +404,19 @@ body {
   border-radius: 4px;
 }
 
+.modal ::-webkit-input-placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+.modal :-moz-placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+.modal ::-moz-placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+.modal :-ms-input-placeholder {
+  color: rgba(117, 117, 117, 0.5);
+}
+
 .modal .checkbox-item {
   margin-bottom: 30px;
 
@@ -837,6 +850,70 @@ body {
   width: 20px;
   height: 20px;
   fill: currentColor;
+}
+
+.footer .subscribe-container {
+  margin-left: 83px;
+}
+
+.footer .subscribe-input {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: rgba(47, 48, 58, 1);
+  border-radius: 4px;
+
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  font-family: var(--main-font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer ::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer :-moz-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer ::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer :-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer .subscribe-button {
+  width: 200px;
+  height: 50px;
+  background-color: var(--accent-color);
+  margin-left: 11px;
+
+  padding-right: 43px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  font-family: var(--main-font-family);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+
+  color: #ffffff;
+}
+
+.footer .subscribe-icon {
+  position: absolute;
+  top: 13px;
+  right: 28px;
 }
 
 /* Портфолио */
